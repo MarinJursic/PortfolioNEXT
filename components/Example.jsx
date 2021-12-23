@@ -7,11 +7,11 @@ let slides = [
   {
     key: 1,
     content: {
-      imageUrl: "./images/SaaS.png",
+      imageUrl: "./images/SaaS.webp",
       imageAlt: "saas",
       projectName: "Honeycomb",
       description:
-        "A Software As A Service Web Application built for home builders to help them organize their work and tasks so they can work more efficiently. Contains of 4 main pages: Home Page, Task Page, Gantt Chart, Calendar Page.",
+        "A Software As A Service Web Application built for home builders to help them organize their work and tasks so they can work more efficiently. Consists of 4 main pages: Home Page, Task Page, Gantt Chart, Calendar Page.",
       technologies: "NEXT.js / MongoDB",
       githubLink: "https://github.com/MarinJursic/fullstack-saas",
       demoLink: "https://baustela2.netlify.app/",
@@ -20,7 +20,7 @@ let slides = [
   {
     key: 2,
     content: {
-      imageUrl: "./images/Tracker.png",
+      imageUrl: "./images/Tracker.webp",
       imageAlt: "tracker",
       projectName: "Expense Tracker",
       description:
@@ -33,7 +33,7 @@ let slides = [
   {
     key: 3,
     content: {
-      imageUrl: "./images/Ecommerce.png",
+      imageUrl: "./images/Ecommerce.webp",
       imageAlt: "ecommerce",
       projectName: "Bakmazon",
       description:
@@ -46,7 +46,7 @@ let slides = [
   {
     key: 4,
     content: {
-      imageUrl: "./images/Crypto.png",
+      imageUrl: "./images/Crypto.webp",
       imageAlt: "crypto",
       projectName: "Crypto Exchange",
       description:
@@ -59,7 +59,7 @@ let slides = [
   {
     key: 5,
     content: {
-      imageUrl: "./images/Untitled.png",
+      imageUrl: "./images/Untitled.webp",
       imageAlt: "restaurant",
       projectName: "Restaurant Website",
       description:
@@ -72,7 +72,7 @@ let slides = [
   {
     key: 6,
     content: {
-      imageUrl: "./images/Nba.png",
+      imageUrl: "./images/Nba.webp",
       imageAlt: "nba",
       projectName: "Season Stats",
       description:
@@ -85,7 +85,7 @@ let slides = [
   {
     key: 7,
     content: {
-      imageUrl: "./images/Instagram.png",
+      imageUrl: "./images/Instagram.webp",
       imageAlt: "instagram",
       projectName: "Instagram Clone",
       description:
@@ -98,7 +98,7 @@ let slides = [
   {
     key: 8,
     content: {
-      imageUrl: "./images/Csgo.png",
+      imageUrl: "./images/Csgo.webp",
       imageAlt: "csgo",
       projectName: "eWarz",
       description:

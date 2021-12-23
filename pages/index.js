@@ -16,9 +16,9 @@ import Example from "../components/Example";
 
 // Images
 
-import github from "../public/images/github.png";
-import linkedin from "../public/images/linkedin.png";
-import mail from "../public/images/mail.png";
+import github from "../public/images/github.webp";
+import linkedin from "../public/images/linkedin.webp";
+import mail from "../public/images/mail.webp";
 import computerTyping from "../public/images/ComputerTyping.svg";
 
 export default function Home() {
@@ -36,10 +36,6 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    console.log(scrollPosition);
-  }, [scrollPosition]);
 
   const variants = {
     show: {
@@ -78,7 +74,7 @@ export default function Home() {
               setMenuOpened(true);
             }}
           >
-            <img src="./images/Hamburger.png" alt="hamburger" />
+            <img src="./images/Hamburger.webp" alt="hamburger" />
           </motion.div>
           <motion.div
             initial={true}
@@ -95,32 +91,32 @@ export default function Home() {
                 setMenuOpened(false);
               }}
             >
-              <img src="./images/Close.png" alt="close" />
+              <img src="./images/Close.webp" alt="close" />
             </div>
             <ul>
               <Link href="/" passHref>
                 <li className={styles.circle}>
-                  <img src="./images/Home.png" alt="home" />
+                  <img src="./images/Home.webp" alt="home" />
                 </li>
               </Link>
               <Link href="#about" passHref>
                 <li className={styles.circle}>
-                  <img src="./images/About.png" alt="about" />
+                  <img src="./images/About.webp" alt="about" />
                 </li>
               </Link>
               <Link href="#skills" passHref>
                 <li className={styles.circle}>
-                  <img src="./images/Skills.png" alt="skills" />
+                  <img src="./images/Skills.webp" alt="skills" />
                 </li>
               </Link>
               <Link href="#projects" passHref>
                 <li className={styles.circle}>
-                  <img src="./images/Projects.png" alt="projects" />
+                  <img src="./images/Projects.webp" alt="projects" />
                 </li>
               </Link>
               <Link href="#contact" passHref>
                 <li className={styles.circle}>
-                  <img src="./images/Contact.png" alt="contact" />
+                  <img src="./images/Contact.webp" alt="contact" />
                 </li>
               </Link>
             </ul>
@@ -128,7 +124,7 @@ export default function Home() {
         </div>
         <Link href="/" passHref>
           <div className={styles.backToTop}>
-            <img src="./images/UpArrow.png" alt="up" />
+            <img src="./images/UpArrow.webp" alt="up" />
           </div>
         </Link>
       </motion.div>
@@ -271,7 +267,7 @@ export default function Home() {
         </svg>
 
         <img
-          src="./images/avatarSharpened.png"
+          src="./images/avatarSharpened.webp"
           alt="person"
           className={styles.avatar}
         />

@@ -3,22 +3,22 @@ import React, { Component } from "react";
 import Card from "./Card";
 
 const allImages = [
-  "./images/HTML.png",
-  "./images/CSS.png",
-  "./images/JavaScript.png",
+  "./images/HTML.webp",
+  "./images/CSS.webp",
+  "./images/JavaScript.webp",
   "./images/React.svg",
-  "./images/Redux.png",
-  "./images/NEXT.png",
+  "./images/Redux.webp",
+  "./images/NEXT.webp",
   "./images/TypeScript.svg",
-  "./images/NodeJS.png",
-  "./images/Express.png",
-  "./images/Firebase.png",
-  "./images/Sass.png",
-  "./images/SocketIO.png",
-  "./images/MongoDB.png",
-  "./images/TailwindCSS.png",
-  "./images/Bootstrap.png",
-  "./images/Flask.png",
+  "./images/NodeJS.webp",
+  "./images/Express.webp",
+  "./images/Firebase.webp",
+  "./images/Sass.webp",
+  "./images/SocketIO.webp",
+  "./images/MongoDB.webp",
+  "./images/TailwindCSS.webp",
+  "./images/Bootstrap.webp",
+  "./images/Flask.webp",
 ];
 
 export default class Wheel extends Component {
