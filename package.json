@@ -19,6 +19,7 @@
     "react-spring": "8.0.18",
     "react-with-gesture": "4.0.8",
     "sass": "^1.43.4",
+    "sharp": "^0.29.3",
     "typewriter-effect": "^2.18.2",
     "uuid": "3.3.2"
   },
