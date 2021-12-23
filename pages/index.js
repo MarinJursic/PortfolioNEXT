@@ -207,7 +207,13 @@ export default function Home() {
                   title="Email"
                   aria-label="email"
                 >
-                  <Image src={mail} alt="email" width={40} height={40} />
+                  <Image
+                    src={mail}
+                    alt="email"
+                    width={40}
+                    height={40}
+                    priority={true}
+                  />
                 </a>
               </li>
             </ul>
