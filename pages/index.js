@@ -45,15 +45,6 @@ export default function Home() {
       </Head>
       <SideMenu scrollPosition={scrollPosition} menuOpened={menuOpened} setMenuOpened={setMenuOpened}/>
       <section className={styles.landing}>
-        <div className={styles.background}>
-          <Image
-            src={background}
-            alt="background"
-            width={1920}
-            height={1080}
-            priority
-          />
-        </div>
         <div className={styles.header}>
           <nav className={styles.navbar}>
             <h2>
@@ -101,7 +92,7 @@ export default function Home() {
                     width={40}
                     height={40}
                     className="github"
-                    
+                    priority
                   />
                 </a>
               </li>
@@ -118,7 +109,7 @@ export default function Home() {
                     alt="linkedin"
                     width={40}
                     height={40}
-                    
+                    priority
                   />
                 </a>
               </li>
@@ -133,7 +124,7 @@ export default function Home() {
                     alt="email"
                     width={40}
                     height={40}
-                    
+                    priority
                   />
                 </a>
               </li>
