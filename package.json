@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.4",
+    "@emotion/styled": "^11.6.0",
+    "disable-scroll": "^0.6.0",
+    "framer-motion": "^5.5.5",
+    "next": "^12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-spring": "8.0.18",
+    "react-with-gesture": "4.0.8",
     "sass": "^1.43.4",
-    "typewriter-effect": "^2.18.2"
+    "typewriter-effect": "^2.18.2",
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
