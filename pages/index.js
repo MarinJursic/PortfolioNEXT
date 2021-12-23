@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import styles from "../styles/data.module.css";
+import styles from "../styles/Home.module.css";
 import background from "../public/background/free-mountain-vector-24.webp";
 import github from "../public/images/Github.svg";
 import linkedin from "../public/images/linkedin.svg";
