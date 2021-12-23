@@ -41,6 +41,7 @@ export default function Home() {
         <title>Marin Jursic</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <script>history.scrollRestoration = "manual"</script>
       </Head>
       <SideMenu scrollPosition={scrollPosition} menuOpened={menuOpened} setMenuOpened={setMenuOpened}/>
       <section className={styles.landing}>
