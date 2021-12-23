@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/About.module.scss';
-import computerTyping from '../public/images/computerTyping.svg';
+import computerTyping from '../public/images/ComputerTyping.svg';
 
 function About() {
     return (
