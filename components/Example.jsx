@@ -7,19 +7,6 @@ let slides = [
   {
     key: 1,
     content: {
-      imageUrl: "./images/Untitled.png",
-      imageAlt: "restaurant",
-      projectName: "Restaurant Website",
-      description:
-        "A Restaurant website made with NEXT.js and MongoDB on which users can check out the restaurants menu and if they like their food they can order it and get it delivered to their address. Site also has a login system for users to create accounts.",
-      technologies: "NEXT.js / MongoDB",
-      githubLink: "https://google.com",
-      demoLink: "https://google.com",
-    },
-  },
-  {
-    key: 2,
-    content: {
       imageUrl: "./images/SaaS.png",
       imageAlt: "saas",
       projectName: "Honeycomb",
@@ -28,6 +15,19 @@ let slides = [
       technologies: "NEXT.js / MongoDB",
       githubLink: "https://github.com/MarinJursic/fullstack-saas",
       demoLink: "https://baustela2.netlify.app/",
+    },
+  },
+  {
+    key: 2,
+    content: {
+      imageUrl: "./images/Tracker.png",
+      imageAlt: "tracker",
+      projectName: "Expense Tracker",
+      description:
+        "Expense Tracker lets you add income or expense in various different categories for a certain date and it keeps track of them using local storage. Incomes and expenses are then shown in a pie chart which tells you in which category you've spent or earned the most.",
+      technologies: "React.js / Material-UI / Speechly",
+      githubLink: "https://github.com/MarinJursic/expense-tracker",
+      demoLink: "https://dreamy-keller-5bfec3.netlify.app/",
     },
   },
   {
@@ -59,14 +59,14 @@ let slides = [
   {
     key: 5,
     content: {
-      imageUrl: "./images/Tracker.png",
-      imageAlt: "tracker",
-      projectName: "Expense Tracker",
+      imageUrl: "./images/Untitled.png",
+      imageAlt: "restaurant",
+      projectName: "Restaurant Website",
       description:
-        "Expense Tracker lets you add income or expense in various different categories for a certain date and it keeps track of them using local storage. Incomes and expenses are then shown in a pie chart which tells you in which category you've spent or earned the most.",
-      technologies: "React.js / Material-UI / Speechly",
-      githubLink: "https://github.com/MarinJursic/expense-tracker",
-      demoLink: "https://dreamy-keller-5bfec3.netlify.app/",
+        "A Restaurant website made with NEXT.js and MongoDB on which users can check out the restaurants menu and if they like their food they can order it and get it delivered to their address. Site also has a login system for users to create accounts.",
+      technologies: "NEXT.js / MongoDB",
+      githubLink: "https://google.com",
+      demoLink: "https://google.com",
     },
   },
   {
