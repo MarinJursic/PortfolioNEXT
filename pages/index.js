@@ -135,9 +135,9 @@ export default function Home() {
           <Image
             src={background}
             alt="background"
-            priority
             width={1920}
             height={1080}
+            priority={true}
           />
         </div>
         <div className={styles.header}>
@@ -187,6 +187,7 @@ export default function Home() {
                     width={40}
                     height={40}
                     className="github"
+                    priority={true}
                   />
                 </a>
               </li>
@@ -198,7 +199,13 @@ export default function Home() {
                   title="LinkedIn"
                   aria-label="linkedin"
                 >
-                  <Image src={linkedin} alt="linkedin" width={40} height={40} />
+                  <Image
+                    src={linkedin}
+                    alt="linkedin"
+                    width={40}
+                    height={40}
+                    priority={true}
+                  />
                 </a>
               </li>
               <li>
