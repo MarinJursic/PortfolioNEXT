@@ -14,6 +14,7 @@ function About() {
               alt="About me image"
               width={1550}
               height={1550}
+              priority
             />
           </div>
           <div className={styles.right}>
