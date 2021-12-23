@@ -1,0 +1,31 @@
+.technologies {
+    background-color: #008dff;
+    height: 55rem;
+    display: flex;
+    padding-top: 1rem;
+    position: relative;
+    justify-content: center;
+  
+    h1 {
+      margin: 0;
+      height: max-content;
+      padding-inline: 5rem;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: lighter;
+      font-size: 52px;
+      border-bottom: 1px solid white;
+    }
+  
+    svg {
+      position: absolute;
+      bottom: -40px;
+      border: none;
+    }
+  
+    .avatar {
+      position: absolute;
+      bottom: -80px;
+      width: 650px;
+    }
+  }
