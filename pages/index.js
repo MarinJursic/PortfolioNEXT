@@ -187,7 +187,6 @@ export default function Home() {
                     width={40}
                     height={40}
                     className="github"
-                    priority
                   />
                 </a>
               </li>
@@ -199,13 +198,7 @@ export default function Home() {
                   title="LinkedIn"
                   aria-label="linkedin"
                 >
-                  <Image
-                    src={linkedin}
-                    alt="linkedin"
-                    width={40}
-                    height={40}
-                    priority
-                  />
+                  <Image src={linkedin} alt="linkedin" width={40} height={40} />
                 </a>
               </li>
               <li>
@@ -214,13 +207,7 @@ export default function Home() {
                   title="Email"
                   aria-label="email"
                 >
-                  <Image
-                    src={mail}
-                    alt="email"
-                    width={40}
-                    height={40}
-                    priority
-                  />
+                  <Image src={mail} alt="email" width={40} height={40} />
                 </a>
               </li>
             </ul>
