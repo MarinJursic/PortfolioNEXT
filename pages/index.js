@@ -1,25 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-unescaped-entities */
-
-// Images
-
+import styles from "../styles/Minify.module.scss";
+import background from "../public/background/free-mountain-vector-24.webp";
 import github from "../public/images/github.webp";
 import linkedin from "../public/images/linkedin.webp";
 import mail from "../public/images/mail.webp";
 import computerTyping from "../public/images/ComputerTyping.svg";
-import background from "../public/background/free-mountain-vector-24.webp";
-
 import Head from "next/head";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
-import styles from "../styles/Home.module.scss";
 import { motion } from "framer-motion";
-
 import { useState, useEffect } from "react";
-
-// Components
-
 import Wheel from "../components/Wheel";
 import Example from "../components/Example";
 
