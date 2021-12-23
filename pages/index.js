@@ -1,5 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
+
+// Images
+
+import github from "../public/images/github.webp";
+import linkedin from "../public/images/linkedin.webp";
+import mail from "../public/images/mail.webp";
+import computerTyping from "../public/images/ComputerTyping.svg";
+import background from "../public/background/free-mountain-vector-24.webp";
+
 import Head from "next/head";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
@@ -13,13 +22,6 @@ import { useState, useEffect } from "react";
 
 import Wheel from "../components/Wheel";
 import Example from "../components/Example";
-
-// Images
-
-import github from "../public/images/github.webp";
-import linkedin from "../public/images/linkedin.webp";
-import mail from "../public/images/mail.webp";
-import computerTyping from "../public/images/ComputerTyping.svg";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -129,6 +131,15 @@ export default function Home() {
         </Link>
       </motion.div>
       <section className={styles.landing}>
+        <div className={styles.background}>
+          <Image
+            src={background}
+            alt="background"
+            priority
+            width={1920}
+            height={1080}
+          />
+        </div>
         <div className={styles.header}>
           <nav className={styles.navbar}>
             <h2>
@@ -176,6 +187,7 @@ export default function Home() {
                     width={40}
                     height={40}
                     className="github"
+                    priority
                   />
                 </a>
               </li>
@@ -187,7 +199,13 @@ export default function Home() {
                   title="LinkedIn"
                   aria-label="linkedin"
                 >
-                  <Image src={linkedin} alt="linkedin" width={40} height={40} />
+                  <Image
+                    src={linkedin}
+                    alt="linkedin"
+                    width={40}
+                    height={40}
+                    priority
+                  />
                 </a>
               </li>
               <li>
@@ -196,7 +214,13 @@ export default function Home() {
                   title="Email"
                   aria-label="email"
                 >
-                  <Image src={mail} alt="email" width={40} height={40} />
+                  <Image
+                    src={mail}
+                    alt="email"
+                    width={40}
+                    height={40}
+                    priority
+                  />
                 </a>
               </li>
             </ul>
@@ -217,6 +241,7 @@ export default function Home() {
               autoStart: true,
               loop: true,
             }}
+            className={styles.typewriter}
           />
         </section>
         <Link href="#about" aria-label="about" passHref>

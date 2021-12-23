@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import VerticalCarousel from "./VerticalCarousel";
-import uuidv4 from "uuid";
 import { config } from "react-spring";
 
 let slides = [

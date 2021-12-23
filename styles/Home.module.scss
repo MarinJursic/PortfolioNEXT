@@ -174,10 +174,18 @@
 .landing {
   margin: 0;
   padding: 0;
-  background-image: url("../public/background/free-mountain-vector-24.webp");
-  background-size: cover;
+  background-color: #102741;
   height: 60.5rem;
   position: relative;
+
+  .background {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
 
   .scrollDown {
     height: 50px;
@@ -219,6 +227,7 @@
   }
 
   .home {
+    z-index: 10;
     display: flex;
     background: none;
     flex-direction: column;
@@ -227,6 +236,10 @@
     color: white;
     align-items: center;
     justify-content: center;
+
+    div {
+      z-index: 10;
+    }
 
     span {
       font-size: 5rem;
@@ -258,6 +271,7 @@
     line-height: 40px;
 
     .navbar {
+      z-index: 10;
       display: flex;
       width: 100%;
       align-items: center;
@@ -270,6 +284,7 @@
       font-size: 1.5rem;
 
       .socials {
+        z-index: 10;
         display: flex;
         list-style: none;
         align-items: center;
@@ -281,6 +296,7 @@
       }
 
       h2 {
+        z-index: 10;
         margin: 0;
         width: 216px;
 
@@ -291,6 +307,7 @@
       }
 
       .buttons {
+        z-index: 10;
         display: flex;
         list-style: none;
         align-items: center;
