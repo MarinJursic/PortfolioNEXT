@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/data.module.css";
 import background from "../public/background/free-mountain-vector-24.webp";
 import github from "../public/images/Github.svg";
 import linkedin from "../public/images/linkedin.svg";
@@ -179,7 +179,7 @@ export default function Home() {
                     width={40}
                     height={40}
                     className="github"
-                   
+                    priority={true}
                   />
                 </a>
               </li>
@@ -196,7 +196,7 @@ export default function Home() {
                     alt="linkedin"
                     width={40}
                     height={40}
-                   
+                    priority={true}
                   />
                 </a>
               </li>
@@ -211,7 +211,7 @@ export default function Home() {
                     alt="email"
                     width={40}
                     height={40}
-                 
+                    priority={true}
                   />
                 </a>
               </li>
