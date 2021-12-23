@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import styles from "../styles/Home.module.scss";
 import background from "../public/background/free-mountain-vector-24.webp";
