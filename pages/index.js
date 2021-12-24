@@ -21,13 +21,11 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
       window.addEventListener("scroll", handleScroll, { passive: true });
 
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
-    }, 1000);
   }, []);
 
   return (
@@ -37,11 +35,6 @@ export default function Home() {
         <title>Marin Jursic</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
-        <script
-        dangerouslySetInnerHTML={{
-          __html: `history.scrollRestoration = "manual"`,
-        }}
-      />
       </Head>
       <SideMenu scrollPosition={scrollPosition} menuOpened={menuOpened} setMenuOpened={setMenuOpened}/>
       <Landing/>
