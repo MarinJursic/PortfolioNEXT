@@ -15,6 +15,7 @@ const Contact = dynamic(() => import('../components/Contact'));
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [menuOpened, setMenuOpened] = useState(false);
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -27,14 +28,20 @@ export default function Home() {
         window.removeEventListener("scroll", handleScroll);
       };
   }, []);
+  
 
   return (
-    <>
+    <div onScroll={handleScroll}>
       <Head>
         <html lang="en" />
         <title>Marin Jursic</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+        dangerouslySetInnerHTML={{
+          __html: `history.scrollRestoration = "manual"`,
+        }}
+      />
       </Head>
       <SideMenu scrollPosition={scrollPosition} menuOpened={menuOpened} setMenuOpened={setMenuOpened}/>
       <Landing/>
@@ -42,6 +49,6 @@ export default function Home() {
       <Technologies/>
       <Projects/>
       <Contact/>
-    </>
+    </div>
   );
 }

@@ -70,11 +70,9 @@ export default class Wheel extends Component {
 
     this.setState({ cards: new_cards });
 
-    let number = 0;
     let event = {
-      deltaY: number,
+      deltaY: 0,
     };
-    this.handle_scroll(event);
 
     event.deltaY = 1;
 
