@@ -33,6 +33,7 @@ class Card extends React.Component {
           src={this.props.pic}
           alt={`${this.props.index}`}
           style={styles.image}
+         
         />
       </div>
     );
@@ -58,7 +59,8 @@ const styles = {
   },
 
   image: {
-    width: "60px",
+    width: "55px",
+    height: "50px"
   },
 };
 

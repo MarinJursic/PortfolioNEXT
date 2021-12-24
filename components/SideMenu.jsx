@@ -37,7 +37,7 @@ function SideMenu({ scrollPosition, menuOpened, setMenuOpened }) {
               setMenuOpened(true);
             }}
           >
-            <img src="./images/Hamburger.webp" alt="hamburger" />
+            <img src="./images/Hamburger.webp" alt="hamburger" style={{height: "25px", width: "25px"}}/>
           </motion.div>
           <motion.div
             initial={true}
