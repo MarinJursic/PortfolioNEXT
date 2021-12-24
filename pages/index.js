@@ -31,7 +31,7 @@ export default function Home() {
   
 
   return (
-    <div onScroll={handleScroll}>
+    <>
       <Head>
         <title>Marin Jursic</title>
         <meta name="description" content="Personal Portfolio" />
@@ -43,6 +43,6 @@ export default function Home() {
       <Technologies/>
       <Projects/>
       <Contact/>
-    </div>
+    </>
   );
 }
