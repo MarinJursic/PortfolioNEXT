@@ -33,15 +33,9 @@ export default function Home() {
   return (
     <div onScroll={handleScroll}>
       <Head>
-        <html lang="en" />
         <title>Marin Jursic</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
-        <script
-        dangerouslySetInnerHTML={{
-          __html: `history.scrollRestoration = "manual"`,
-        }}
-      />
       </Head>
       <SideMenu scrollPosition={scrollPosition} menuOpened={menuOpened} setMenuOpened={setMenuOpened}/>
       <Landing/>
