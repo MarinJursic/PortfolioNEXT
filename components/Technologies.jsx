@@ -24,7 +24,7 @@ function Technologies() {
           />
         </svg>
         <img
-          src="./images/avatarSharpened.webp"
+          src="./images/AvatarSharpened.webp"
           alt="person"
           className={styles.avatar}
         />
