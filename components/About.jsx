@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/About.module.scss';
+import styles from '../styles/about.module.css';
 import computerTyping from '../public/images/ComputerTyping.svg';
 
 function About() {

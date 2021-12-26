@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import dynamic from 'next/dynamic';
 import React, {useState, useEffect} from 'react'
-import styles from '../styles/Technologies.module.scss';
+import styles from '../styles/technologies.module.css';
 
 const Wheel = dynamic(() => import("../components/Wheel"));
 

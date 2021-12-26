@@ -1,6 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
-import styles from '../styles/Projects.module.scss';
+import styles from '../styles/projects.module.css';
 
 const Example = dynamic(() => import("../components/Example"));
 

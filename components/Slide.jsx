@@ -3,7 +3,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Spring, animated } from "react-spring/renderprops.cjs";
 import { withGesture } from "react-with-gesture";
-import styles from "../styles/Slide.module.scss";
+import styles from "../styles/slide.module.css";
 
 function Slide({
   content,

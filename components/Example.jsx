@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import VerticalCarousel from "./VerticalCarousel";
 import { config } from "react-spring";
-import styles from '../styles/Example.module.scss';
+import styles from '../styles/example.module.css';
 
 let slides = [
   {

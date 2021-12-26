@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "@emotion/styled";
 import Slide from "./Slide";
 import PropTypes from "prop-types";
-import styles from '../styles/VerticalCarousel.module.scss';
+import styles from '../styles/verticalcarousel.module.css';
 
 function mod(a, b) {
   return ((a % b) + b) % b;

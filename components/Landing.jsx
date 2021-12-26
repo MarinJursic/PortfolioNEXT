@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Landing.module.scss';
+import styles from '../styles/landing.module.css';
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
