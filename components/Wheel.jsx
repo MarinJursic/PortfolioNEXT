@@ -26,7 +26,7 @@ export default class Wheel extends Component {
     super(props);
 
     this.state = {
-      radius: 500, // 250
+      radius: props.width >= 1000 ? 550 : 450, // 250
       cards: [],
       theta: 0,
       snap_in_progress: false,
@@ -80,7 +80,8 @@ export default class Wheel extends Component {
   }
 
   handle_scroll = (event) => {
-    if (!this.state.loaded && this.snap_in_progress) {
+    try {
+      if (!this.state.loaded && this.snap_in_progress) {
       return;
     } else {
       clearTimeout(this.anim_id);
@@ -107,6 +108,9 @@ export default class Wheel extends Component {
           }
         );
       }, 150);
+    }
+    } catch (error) {
+      
     }
   };
 
