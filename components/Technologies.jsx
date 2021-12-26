@@ -5,6 +5,25 @@ import styles from '../styles/Technologies.module.scss';
 
 const Wheel = dynamic(() => import("../components/Wheel"));
 
+const allImages = [
+  "./images/HTML.webp",
+  "./images/CSS.webp",
+  "./images/JavaScript.webp",
+  "./images/React.svg",
+  "./images/Redux.webp",
+  "./images/NEXT.webp",
+  "./images/TypeScript.svg",
+  "./images/NodeJS.webp",
+  "./images/Express.webp",
+  "./images/Firebase.webp",
+  "./images/Sass.webp",
+  "./images/SocketIO.webp",
+  "./images/MongoDB.webp",
+  "./images/TailwindCSS.webp",
+  "./images/Bootstrap.webp",
+  "./images/Flask.webp",
+];
+
 function Technologies() {
 
   const [windowSize, setWindowSize] = useState({
@@ -37,7 +56,10 @@ function Technologies() {
     return (
         <section className={styles.technologies} id="skills">
         <h1>My Skills</h1>
-        {windowSize.width !== undefined && <Wheel width={windowSize.width}/>}    
+        {windowSize.width > 800 && <Wheel width={windowSize.width}/>}
+        <div className={styles.grid}>
+          {allImages.map((image,id) => <div key={id} className={styles.circle}><img src={image} alt={image}/></div>)}
+        </div>    
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="2272"

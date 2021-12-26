@@ -3,7 +3,6 @@
     z-index: 1000000;
     top: 0;
     right: 0;
-    width: 7.5rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -20,6 +19,7 @@
       align-items: center;
   
       .menu {
+        width: 100%;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -94,6 +94,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
   
         &:hover {
           cursor: pointer;
@@ -125,3 +130,46 @@
       }
     }
   }
+
+@media only screen and (max-height: 650px){
+
+  .backToTop {
+    width: 30px !important;
+    height: 30px !important;
+
+    img {
+      width: 15px !important;
+      height: 15px !important;
+    }
+  }
+
+  .closeMenu {
+    width: 30px !important;
+    height: 30px !important;
+
+    img {
+      width: 15px !important;
+      height: 15px !important;
+    }
+  }
+
+  .hamburger {
+    width: 30PX !important;
+    height: 30px !important;
+
+    img {
+      width: 15px !important;
+      height: 15px !important;
+    }
+  }
+
+  .circle {
+    width: 30px !important;
+    height: 30px !important;
+
+    img {
+      width: 15px !important;
+      height: 15px !important;
+    }
+  }
+}
