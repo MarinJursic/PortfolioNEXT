@@ -5,30 +5,6 @@ import { Spring, animated } from "react-spring/renderprops.cjs";
 import { withGesture } from "react-with-gesture";
 import styles from "../styles/Slide.module.scss";
 
-const SlideContainer = styled.div`
-  position: absolute;
-  height: 70%;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-origin: 50% 50%;
-`;
-
-const SlideCard = styled.div`
-  position: relative;
-  max-width: 50%;
-  min-width: 30%;
-  width: 90vw;
-  height: 100%;
-  background: white;
-  font-size: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-origin: 50% 50%;
-`;
-
 function Slide({
   content,
   offsetRadius,
@@ -43,12 +19,8 @@ function Slide({
   const totalPresentables = 2 * offsetRadius + 1;
   const distanceFactor = 1 - Math.abs(offsetFromMiddle / (offsetRadius + 1));
 
-  const offsetCardClick = (i) => {
-    console.log(i);
-  };
-
   const translateYoffset =
-    200 * (Math.abs(offsetFromMiddle) / (offsetRadius + 1));
+    225 * (Math.abs(offsetFromMiddle) / (offsetRadius + 1));
   let translateY = -50;
 
   if (offsetRadius !== 0) {
@@ -86,18 +58,19 @@ function Slide({
       config={animationConfig}
     >
       {(style) => (
-        <SlideContainer
+        <div className={styles.slideContainer}
           style={{
             ...style,
             zIndex: Math.abs(Math.abs(offsetFromMiddle) - 2),
           }}
         >
-          <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
+          <div className={styles.slideCard} onClick={() => moveSlide(offsetFromMiddle)}>
             <img
               src={content.imageUrl}
               alt={content.imageAlt}
               className={styles.projectImage}
             />
+            <h6 className={styles.aboveText}>{content.projectName}</h6>
             <div className={styles.info}>
               <h2>{content.projectName}</h2>
               <p>{content.description}</p>
@@ -139,8 +112,8 @@ function Slide({
                 </a>
               </div>
             </div>
-          </SlideCard>
-        </SlideContainer>
+          </div>
+        </div>
       )}
     </Spring>
   );

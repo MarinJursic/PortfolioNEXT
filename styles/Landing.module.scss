@@ -4,7 +4,7 @@
     background-image: url("../public/background/free-mountain-vector-24.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60.5rem;
+    min-height: 100vh;
     position: relative;
   
     .scrollDown {
@@ -104,6 +104,15 @@
   
           li {
             padding-inline: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
           }
         }
   
@@ -178,3 +187,72 @@
       opacity: 0;
     }
   }
+
+@media only screen and (max-width: 1300px){
+
+  .navbar {
+    justify-content: center !important;
+  }
+
+  .buttons {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  .home {
+
+    div {
+      padding-bottom: 6rem !important;
+    }
+
+    span {
+      font-size: 3.5rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+
+  .navbar {
+    padding-inline: 1rem !important;
+    justify-content: flex-start !important;
+
+    li {
+      padding-inline: 0.25rem !important;
+    }
+    h2 {
+      display: none !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px){
+
+  .home {
+    
+    span {
+      font-size: 2.75rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px){
+
+  .home {
+    padding-inline: 1rem !important;
+
+    div {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    span {
+      font-size: 3rem !important;
+      text-align: center !important;
+    }
+  }
+}

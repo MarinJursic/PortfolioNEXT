@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import VerticalCarousel from "./VerticalCarousel";
 import { config } from "react-spring";
+import styles from '../styles/Example.module.scss';
 
 let slides = [
   {
@@ -117,23 +118,10 @@ export default class Example extends Component {
     config: config.gentle,
   };
 
-  // onChangeInput = e => {
-  //   this.setState({
-  //     [e.target.name]: parseInt(e.target.value, 10) || 0
-  //   });
-  // };
-
   render() {
     return (
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          width: "50vw",
-          height: "80vh",
-          margin: "0 auto",
-        }}
+        className={styles.example}
       >
         <VerticalCarousel
           slides={slides}

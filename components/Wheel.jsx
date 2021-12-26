@@ -26,7 +26,7 @@ export default class Wheel extends Component {
     super(props);
 
     this.state = {
-      radius: 550, // 250
+      radius: props.width > 1000 ? 550 : 450, // 250
       cards: [],
       theta: 0,
       snap_in_progress: false,

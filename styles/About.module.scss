@@ -19,13 +19,23 @@
       flex-direction: row;
       padding-top: 7rem;
       justify-content: center;
+
+      .left {
+        width: 42%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .right {
+        width: 58%;
+      }
     }
   
     h1 {
       font-family: "Manrope",sans-serif;
       font-size: 4.5rem;
       margin-bottom: 0;
-      padding-inline: 5rem;
       text-align: center;
     }
   
@@ -38,9 +48,9 @@
     }
   
     .btn {
-      margin-top: 5rem;
+      margin-top: 2rem;
       margin-inline: 5rem;
-      padding-bottom: 5rem;
+      padding-bottom: 4.75rem;
       border-bottom: solid 1px white;
       text-align: center;
       display: flex;
@@ -68,3 +78,108 @@
       }
     }
   }
+
+@media only screen and (max-width: 1400px){
+
+  .right {
+    h1 {
+      font-size: 4rem !important;
+    }
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px){
+
+  .right {
+    h1{
+
+      font-size: 3rem !important;
+    }
+
+    p {
+      line-height: 2.5rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px){
+
+  .about {
+    margin-top: 1rem !important;
+    padding-inline: 1rem !important;
+    height: 50rem !important;
+  }
+
+  .right {
+    h1{
+      font-size: 2.5rem !important;
+    }
+
+    p {
+      font-size: 1rem !important;
+      line-height: 2rem !important;
+      padding: 1rem !important;
+    }
+
+    .btn {
+
+      a {
+        font-size: 1.25rem !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+
+  .about {
+    height: 55rem !important;
+  }
+
+  .left {
+    display: none !important;
+  }
+
+  .split {
+    padding-top: 3rem !important;
+    width: 100% !important;
+  }
+
+  .right {
+    width: 100% !important;
+
+    h1 {
+      font-size: 3rem !important;
+    }
+
+    p {
+      font-size: 1.25rem !important;
+      line-height: 2.5rem !important;
+    }
+
+    .btn {
+      padding-bottom: 2.5rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px){
+
+  .about {
+    height: 47.5rem !important;
+  }
+
+  .right {
+    h1 {
+      font-size: 3rem !important;
+    }
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+}

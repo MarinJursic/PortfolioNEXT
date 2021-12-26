@@ -1,0 +1,48 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+}
+
+.navigationButtons {
+    position: relative;
+    display: flex;
+    bottom: -50px;
+    height: 60px;
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 1rem;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navBtn {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 1400px){
+
+    .wrapper {
+        width: 0%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .wrapper {
+        width: 100% !important;
+    }
+
+    .navigationButtons{
+        justify-content: center !important;
+    }
+
+    .navBtn{
+        margin-inline: 1rem !important;
+    }
+}

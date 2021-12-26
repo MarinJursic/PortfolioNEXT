@@ -29,3 +29,35 @@
       width: 650px;
     }
   }
+
+@media only screen and (max-width: 1000px){
+
+  .technologies{
+
+    svg {
+      bottom: -60px !important;
+    }
+  }
+
+  .avatar {
+    width: 550px !important;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  .technologies{
+    height: 50rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px){
+
+  .technologies{
+
+    h1 {
+      font-size: 2.5rem !important;
+      padding-inline: 2.5rem !important;
+    }
+  }
+}

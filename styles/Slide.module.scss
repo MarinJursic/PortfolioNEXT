@@ -1,3 +1,28 @@
+
+.slideContainer {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 50% 50%;
+}
+
+.slideCard {
+  position: relative;
+  max-width: 50%;
+  min-width: 30%;
+  width: 90vw;
+  height: 100%;
+  background: white;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 50% 50%;
+}
+
 .projectImage {
   width: 100%;
   height: 100%;
@@ -8,6 +33,14 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.35);
+}
+
+.aboveText {
+  display: none;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  top: -6rem;
 }
 
 .info {
@@ -116,5 +149,180 @@
         fill: black;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1400px){
+
+  .slideCard{
+    width: 70vw;
+    height: 80%;
+  }
+
+  .info {
+
+    right: -37.5rem;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 32.5rem;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px){
+
+  .slideCard{
+    width: 60vw;
+    height: 65%;
+  }
+
+  .info {
+
+    right: -30rem;
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 12px;
+      width: 25rem;
+      margin-bottom: 1rem;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    h6 {
+      font-size: 16px;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .githubRepo{
+
+    svg {
+      width: 25px !important;
+    }
+
+    padding: 0.6rem !important;
+    padding-inline: 1rem !important;
+    font-size: 18px !important;
+  }
+
+  .liveDemo{
+    svg {
+      width: 25px !important;
+    }
+
+    padding: 0.5rem !important;
+    padding-inline: 1rem !important;
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  .aboveText{
+    display: initial !important;
+  }
+
+  .info {
+    right: auto;
+    bottom: -4rem;
+
+    h2 {
+      display: none !important;
+    }
+
+    p {
+      display: none !important;
+    }
+
+    h5 {
+      display: none !important;
+    }
+
+    h6 {
+      display: none !important;
+    }
+  }
+
+  .slideCard {
+    width: 160vw;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+
+  .slideCard {
+    height: 70% !important;
+  }
+
+  .githubRepo {
+
+    svg {
+      width: 20px !important;
+    }
+
+    padding: 0.7rem !important;
+    padding-inline: 1rem !important;
+
+    font-size: 12px !important;
+  }
+
+  .liveDemo{
+    svg {
+      width: 20px !important;
+    }
+
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 342px){
+
+  .slideCard{
+
+    height: 50% !important;
+  }
+
+  .githubRepo {
+
+    svg {
+      width: 20px !important;
+    }
+
+    padding: 0.5rem !important;
+    padding-inline: 0.75rem !important;
+
+    font-size: 12px !important;
+  }
+
+  .liveDemo{
+    svg {
+      width: 20px !important;
+    }
+
+    padding: 0.5rem !important;
+    padding-inline: 0.75rem !important;
+
+    font-size: 12px !important;
   }
 }
