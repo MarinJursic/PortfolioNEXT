@@ -1,11 +1,24 @@
 import React, { Component } from "react";
 import VerticalCarousel from "./VerticalCarousel";
 import { config } from "react-spring";
-import styles from '../styles/example.module.css';
+import styles from "../styles/example.module.css";
 
 let slides = [
   {
     key: 1,
+    content: {
+      imageUrl: "./images/rw.webp",
+      imageAlt: "rocketWizard",
+      projectName: "RocketWizard",
+      description:
+        "Copy-trading web application that allows users to purchase subscriptions for specific traders and get their trades copied to their account.",
+      technologies: "NEXT.js / MongoDB",
+      githubLink: "https://github.com/Brkic365/RocketWizard",
+      demoLink: "https://rocketwizard.io/",
+    },
+  },
+  {
+    key: 2,
     content: {
       imageUrl: "./images/SaaS.webp",
       imageAlt: "saas",
@@ -18,7 +31,7 @@ let slides = [
     },
   },
   {
-    key: 2,
+    key: 3,
     content: {
       imageUrl: "./images/Tracker.webp",
       imageAlt: "tracker",
@@ -28,19 +41,6 @@ let slides = [
       technologies: "React.js / Material-UI / Speechly",
       githubLink: "https://github.com/MarinJursic/expense-tracker",
       demoLink: "https://dreamy-keller-5bfec3.netlify.app/",
-    },
-  },
-  {
-    key: 3,
-    content: {
-      imageUrl: "./images/Ecommerce.webp",
-      imageAlt: "ecommerce",
-      projectName: "Bakmazon",
-      description:
-        "Ecommerce web application built using React.js and Firebase on which people can buy all sorts of clothes and shoes. Offers a wide variety of filters for searching the clothes you'd like and also has coupons on checkout.",
-      technologies: "React.js / Firebase",
-      githubLink: "https://github.com/Brkic365/Bakmazon",
-      demoLink: "https://bakmazon.netlify.app/",
     },
   },
   {
@@ -60,26 +60,26 @@ let slides = [
     key: 5,
     content: {
       imageUrl: "./images/Untitled.webp",
-      imageAlt: "restaurant",
-      projectName: "Restaurant Website",
+      imageAlt: "ebankc",
+      projectName: "EBankc",
       description:
-        "A Restaurant website made with NEXT.js and MongoDB on which users can check out the restaurants menu and if they like their food they can order it and get it delivered to their address. Site also has a login system for users to create accounts.",
-      technologies: "NEXT.js / MongoDB",
-      githubLink: "https://google.com",
-      demoLink: "https://google.com",
+        "A Defi banking web application that allows users to earn interest, borrow and exchange digital assets with ease.",
+      technologies: "React.js / Redux",
+      githubLink: "https://github.com/MarinJursic/EBankc",
+      demoLink: "https://ebankcapp.netlify.app",
     },
   },
   {
     key: 6,
     content: {
-      imageUrl: "./images/Nba.webp",
-      imageAlt: "nba",
-      projectName: "Season Stats",
+      imageUrl: "./images/sanomind.webp",
+      imageAlt: "sanomind",
+      projectName: "Sanomind",
       description:
-        "Season Stats allows you to search for a specific player that has played in the NBA or is still playing and lets you choose a season from which the stats will be. The stats come from an open source NBA Api (https://www.balldontlie.io/ ).",
-      technologies: "React.js / Axios",
-      githubLink: "https://github.com/MarinJursic/season-stats",
-      demoLink: "https://hopeful-yalow-78dd65.netlify.app/",
+        "A web application for therapists and psychologists which allows them to create their podcasts, share exclusive content, and much more.",
+      technologies: "NEXT.js",
+      githubLink: "https://github.com/sanomind-org/sanomind-web-app-nextjs",
+      demoLink: "https://qa.sanomind.com/",
     },
   },
   {
@@ -120,9 +120,7 @@ export default class Example extends Component {
 
   render() {
     return (
-      <div
-        className={styles.example}
-      >
+      <div className={styles.example}>
         <VerticalCarousel
           slides={slides}
           offsetRadius={this.state.offsetRadius}
