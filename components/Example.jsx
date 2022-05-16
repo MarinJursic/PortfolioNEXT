@@ -59,19 +59,6 @@ let slides = [
   {
     key: 5,
     content: {
-      imageUrl: "./images/Untitled.webp",
-      imageAlt: "ebankc",
-      projectName: "EBankc",
-      description:
-        "A Defi banking web application that allows users to earn interest, borrow and exchange digital assets with ease.",
-      technologies: "React.js / Redux",
-      githubLink: "https://github.com/MarinJursic/EBankc",
-      demoLink: "https://ebankcapp.netlify.app",
-    },
-  },
-  {
-    key: 6,
-    content: {
       imageUrl: "./images/sanomind.webp",
       imageAlt: "sanomind",
       projectName: "Sanomind",
@@ -83,7 +70,7 @@ let slides = [
     },
   },
   {
-    key: 7,
+    key: 6,
     content: {
       imageUrl: "./images/Instagram.webp",
       imageAlt: "instagram",
@@ -96,7 +83,7 @@ let slides = [
     },
   },
   {
-    key: 8,
+    key: 7,
     content: {
       imageUrl: "./images/Csgo.webp",
       imageAlt: "csgo",
@@ -106,6 +93,19 @@ let slides = [
       technologies: "React.js / TypeScript / Bootstrap",
       githubLink: "https://github.com/MarinJursic/cssite",
       demoLink: "https://affectionate-beaver-774e53.netlify.app/",
+    },
+  },
+  {
+    key: 8,
+    content: {
+      imageUrl: "./images/ebankc.webp",
+      imageAlt: "ebankc",
+      projectName: "EBankc",
+      description:
+        "A Defi banking web application that allows users to earn interest, borrow and exchange digital assets with ease.",
+      technologies: "React.js / Redux",
+      githubLink: "https://github.com/MarinJursic/EBankc",
+      demoLink: "https://ebankc.vercel.app/",
     },
   },
 ];
