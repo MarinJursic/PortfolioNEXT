@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Marin Jursic | Full-Stack Web Developer</title>
+        <title>Marin Jursic | Web Developer</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
