@@ -27,7 +27,7 @@ let slides = [
         "A Software As A Service Web Application built for home builders to help them organize their work and tasks so they can work more efficiently. Consists of 4 main pages: Home Page, Task Page, Gantt Chart, Calendar Page.",
       technologies: "NEXT.js / MongoDB",
       githubLink: "https://github.com/MarinJursic/fullstack-saas",
-      demoLink: "https://baustela2.netlify.app/",
+      demoLink: "https://honeycombsite.netlify.app/",
     },
   },
   {
@@ -64,8 +64,8 @@ let slides = [
       projectName: "Sanomind",
       description:
         "A web application for therapists and psychologists which allows them to create their podcasts, share exclusive content, and much more.",
-      technologies: "NEXT.js",
-      githubLink: "https://github.com/sanomind-org/sanomind-web-app-nextjs",
+      technologies: "NEXT.js / SCSS",
+      githubLink: "",
       demoLink: "https://qa.sanomind.com/",
     },
   },
@@ -105,7 +105,7 @@ let slides = [
         "A Defi banking web application that allows users to earn interest, borrow and exchange digital assets with ease.",
       technologies: "React.js / Redux",
       githubLink: "https://github.com/MarinJursic/EBankc",
-      demoLink: "https://ebankc.vercel.app/",
+      demoLink: "https://ebankc.app/",
     },
   },
 ];
