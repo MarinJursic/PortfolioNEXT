@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import github from "../public/images/Github.svg";
 import linkedin from "../public/images/linkedin.svg";
-import mail from "../public/images/mail.svg";
+import mail from "../public/images/email.svg";
 
 function Landing() {
   return (

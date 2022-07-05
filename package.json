@@ -17,6 +17,7 @@
     "next": "^12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hotjar": "^5.0.0",
     "react-icons": "^4.3.1",
     "react-spring": "8.0.18",
     "react-with-gesture": "4.0.8",
