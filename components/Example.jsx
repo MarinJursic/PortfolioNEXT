@@ -37,7 +37,7 @@ let slides = [
       imageAlt: "tracker",
       projectName: "Expense Tracker",
       description:
-        "Expense Tracker lets you add income or expense in various different categories for a certain date and it keeps track of them using local storage. Incomes and expenses are then shown in a pie chart which tells you in which category you've spent or earned the most.",
+        "Expense Tracker lets you add income or expense in different categories for a certain date and it keeps track of them using local storage. Incomes and expenses are then shown in a pie chart which tells you in which category you've spent or earned the most.",
       technologies: "React.js / Material-UI / Speechly",
       githubLink: "https://github.com/MarinJursic/expense-tracker",
       demoLink: "https://dreamy-keller-5bfec3.netlify.app/",
@@ -50,7 +50,7 @@ let slides = [
       imageAlt: "crypto",
       projectName: "Crypto Exchange",
       description:
-        "A Crypto Exchange Web Application on which clinets can buy 4 main types of crypto: Bitcoin, Ethereum, Litecoin and Bitcoin Cash. Users enter which crypto they like, the amount they would like, their wallet address and the site takes care of the rest.",
+        "A Crypto Exchange Web Application on which clients can buy 4 main types of crypto: Bitcoin, Ethereum, Litecoin and Bitcoin Cash. Users enter which crypto they like, the amount they would like, their wallet address and the site takes care of the rest.",
       technologies: "NEXT.js / Stipe API / Coinbase API",
       githubLink: "https://github.com/MarinJursic/CryptoExchange",
       demoLink: "https://crypto-exchange-liard.vercel.app/",
@@ -89,7 +89,7 @@ let slides = [
       imageAlt: "csgo",
       projectName: "eWarz",
       description:
-        "A CS:GO themed website for a CS:GO community server. Sites is built using React.js and TypeScript and Bootstrap. Consists of multiple pages and on the server page users have a button on which when they pressed they can join the server.",
+        "A CS:GO themed website for a CS:GO community server. Site is built using React.js and TypeScript and Bootstrap. Consists of multiple pages and on the server page users have a button on which when they press they join the server.",
       technologies: "React.js / TypeScript / Bootstrap",
       githubLink: "https://github.com/MarinJursic/cssite",
       demoLink: "https://affectionate-beaver-774e53.netlify.app/",
