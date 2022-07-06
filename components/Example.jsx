@@ -13,7 +13,7 @@ let slides = [
       description:
         "Copy-trading web application that allows users to purchase subscriptions for specific traders and get their trades copied to their account.",
       technologies: "NEXT.js / MongoDB",
-      githubLink: "https://github.com/Brkic365/RocketWizard",
+      githubLink: "",
       demoLink: "https://rocketwizard.io/",
     },
   },
@@ -26,7 +26,7 @@ let slides = [
       description:
         "A Software As A Service Web Application built for home builders to help them organize their work and tasks so they can work more efficiently. Consists of 4 main pages: Home Page, Task Page, Gantt Chart, Calendar Page.",
       technologies: "NEXT.js / MongoDB",
-      githubLink: "https://github.com/MarinJursic/fullstack-saas",
+      githubLink: "",
       demoLink: "https://honeycombsite.netlify.app/",
     },
   },
@@ -104,7 +104,7 @@ let slides = [
       description:
         "A Defi banking web application that allows users to earn interest, borrow and exchange digital assets with ease.",
       technologies: "React.js / Redux",
-      githubLink: "https://github.com/MarinJursic/EBankc",
+      githubLink: "",
       demoLink: "https://ebankc.app/",
     },
   },
