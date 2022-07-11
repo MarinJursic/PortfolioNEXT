@@ -21,7 +21,7 @@ const allImages = [
   "./images/MongoDB.webp",
   "./images/TailwindCSS.webp",
   "./images/Bootstrap.webp",
-  "./images/graphql.webp",
+  "./images/GraphQL.webp",
 ];
 
 function Technologies() {
