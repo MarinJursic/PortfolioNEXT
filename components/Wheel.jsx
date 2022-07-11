@@ -18,7 +18,7 @@ const allImages = [
   "./images/MongoDB.webp",
   "./images/TailwindCSS.webp",
   "./images/Bootstrap.webp",
-  "./images/Flask.webp",
+  "./images/GraphQL.webp",
 ];
 
 export default class Wheel extends Component {
@@ -82,36 +82,36 @@ export default class Wheel extends Component {
   handle_scroll = (event) => {
     try {
       if (!this.state.loaded && this.snap_in_progress) {
-      return;
-    } else {
-      clearTimeout(this.anim_id);
-      let scroll_speed = (event.deltaY / 360) * 20;
-      this.temp_theta += scroll_speed;
+        return;
+      } else {
+        clearTimeout(this.anim_id);
+        let scroll_speed = (event.deltaY / 360) * 20;
+        this.temp_theta += scroll_speed;
 
-      this.wheel.style.transitionDuration = "1.0s"; // 0.1
-      this.wheel.style.transitionDelay = "0.0s";
-      this.wheel.style.transform = `translate(-50%,-50%) rotate(${this.temp_theta}deg)`;
+        this.wheel.style.transitionDuration = "1.0s"; // 0.1
+        this.wheel.style.transitionDelay = "0.0s";
+        this.wheel.style.transform = `translate(-50%,-50%) rotate(${this.temp_theta}deg)`;
 
-      for (let i = 0; i < this.wheel.children.length; i++) {
-        this.wheel.children[i].style.transitionDuration = "1.0s";
-        this.wheel.children[i].style.transitionDelay = "0.0s";
-        this.wheel.children[i].style.transform = `translate(-50%,-50%) rotate(${
-          -1.0 * this.temp_theta
-        }deg)`;
+        for (let i = 0; i < this.wheel.children.length; i++) {
+          this.wheel.children[i].style.transitionDuration = "1.0s";
+          this.wheel.children[i].style.transitionDelay = "0.0s";
+          this.wheel.children[
+            i
+          ].style.transform = `translate(-50%,-50%) rotate(${
+            -1.0 * this.temp_theta
+          }deg)`;
+        }
+
+        this.anim_id = setTimeout(() => {
+          this.setState(
+            { theta: this.temp_theta, snap_in_progress: true },
+            () => {
+              this.snap_back();
+            }
+          );
+        }, 150);
       }
-
-      this.anim_id = setTimeout(() => {
-        this.setState(
-          { theta: this.temp_theta, snap_in_progress: true },
-          () => {
-            this.snap_back();
-          }
-        );
-      }, 150);
-    }
-    } catch (error) {
-      
-    }
+    } catch (error) {}
   };
 
   snap_back = () => {
