@@ -18,7 +18,7 @@ const allImages = [
   "./images/MongoDB.webp",
   "./images/TailwindCSS.webp",
   "./images/Bootstrap.webp",
-  "./images/Graphql.webp",
+  "./images/graph.webp",
 ];
 
 export default class Wheel extends Component {
