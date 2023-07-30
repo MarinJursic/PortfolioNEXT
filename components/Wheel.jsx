@@ -2,25 +2,6 @@
 import React, { Component } from "react";
 import Card from "./Card";
 
-const allImages = [
-  "./images/HTML.webp",
-  "./images/CSS.webp",
-  "./images/JavaScript.webp",
-  "./images/React.svg",
-  "./images/Redux.webp",
-  "./images/NEXT.webp",
-  "./images/TypeScript.svg",
-  "./images/NodeJS.webp",
-  "./images/Express.webp",
-  "./images/Firebase.webp",
-  "./images/Sass.webp",
-  "./images/SocketIO.webp",
-  "./images/MongoDB.webp",
-  "./images/TailwindCSS.webp",
-  "./images/Bootstrap.webp",
-  "./images/graph.webp",
-];
-
 export default class Wheel extends Component {
   constructor(props) {
     super(props);
@@ -57,7 +38,7 @@ export default class Wheel extends Component {
       // 8
       new_cards.push(
         <Card
-          pic={allImages[i]}
+          pic={this.props.allImages[i]}
           theta={(Math.PI / 8.0) * i} // 4.0
           radius={this.state.radius}
           center={center_of_wheel}

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import dynamic from "next/dynamic";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/technologies.module.css";
 
 const Wheel = dynamic(() => import("../components/Wheel"));
@@ -55,7 +55,9 @@ function Technologies() {
   return (
     <section className={styles.technologies} id="skills">
       <h1>My Skills</h1>
-      {windowSize.width > 800 && <Wheel width={windowSize.width} />}
+      {windowSize.width > 800 && (
+        <Wheel width={windowSize.width} allImages={allImages} />
+      )}
       <div className={styles.grid}>
         {allImages.map((image, id) => (
           <div key={id} className={styles.circle}>

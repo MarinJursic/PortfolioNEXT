@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import VerticalCarousel from "./VerticalCarousel";
 import { config } from "react-spring";
 import styles from "../styles/example.module.css";
+import VerticalCarousel from "./VerticalCarousel";
 
 let slides = [
   {
@@ -105,7 +105,7 @@ let slides = [
         "A Defi banking web application that allows users to earn interest, borrow and exchange digital assets with ease.",
       technologies: "React.js / Redux",
       githubLink: "",
-      demoLink: "https://ebankc.app/",
+      demoLink: "https://ebankc.vercel.app/",
     },
   },
 ];
